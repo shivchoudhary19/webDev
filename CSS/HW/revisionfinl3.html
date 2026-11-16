@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text on All Edges</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .box {
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 3px solid rgb(87, 4, 93);
+      border-radius: 20px;
+      background-color: rgb(31, 182, 233);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .label {
+      position: relative;
+    }
+
+    .top,
+    .bottom {
+      align-self: center;
+    }
+
+    .middle-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span class="label top">My Box</span>
+
+    <div class="middle-row">
+      <span class="label">My Box</span>
+      <span class="label">My Box</span>
+    </div>
+
+    <span class="label bottom">My Box</span>
+  </div>
+</body>
+</html>
