@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text in All Corners</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .box {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      border: 3px solid blue;
+      border-radius: 20px;
+      background-color: lightblue;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-left, .top-right, .bottom-left, .bottom-right {
+      position: absolute;
+      padding: 12px;
+    }
+
+    .top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="top-left">Box1</span>
+    <span class="top-right">Box2</span>
+    <span class="bottom-left">Box3</span>
+    <span class="bottom-right">Box4</span>
+  </div>
+</body>
+</html>

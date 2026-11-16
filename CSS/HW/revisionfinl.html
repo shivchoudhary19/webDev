@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Inside a Box</title>
+  <style>
+    .outer-box {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(65, 86, 242);
+  border: 3px solid rgb(1, 1, 10);
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.inner-box {
+  width: 150px;
+  height: 100px;
+  background-color: rgb(29, 204, 64);
+  border: 2px solid rgb(12, 8, 1);
+  border-radius: 15px;
+  padding: 8px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+  </style>
+</head>
+<body>
+
+  <div class="outer-box">
+    <div class="inner-box">Inner Box</div>
+  </div>
+
+</body>
+</html>
