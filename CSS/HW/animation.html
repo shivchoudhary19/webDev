@@ -5,23 +5,30 @@
 div {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: #a32f0b;
+background: linear-gradient(90deg, rgba(163, 47, 11, 1) 0%, rgba(19, 242, 112, 1) 50%, rgba(232, 26, 174, 1) 100%);
+  position: relative;
   animation-name: myAnimation;
   animation-duration: 4s;
 }
 
 @keyframes myAnimation {
-  0% {background-color: red; left :0px; top:0px}
-  25%{background-color: yellow; left: 200px; top: 100px;}
-  50% {background-color: blue; left: 200px; top: 200px;}
-  75% {background-color: green; left: 0px; top: 200px;}
-  100% {background-color: red; left: 0px; top: 0px}
+  0%   {background-color: #22C1C3;
+    background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);left:0px; top:0px;}
+
+  25%  {background: #c32222;
+background: linear-gradient(0deg, rgba(195, 34, 34, 1) 0%, rgba(253, 187, 45, 1) 100%); left:200px; top:0px;}
+  50%  {background: #3ffbdf;
+background: radial-gradient(circle, rgba(63, 251, 223, 0.69) 0%, rgba(252, 70, 107, 1) 100%); left:200px; top:200px;}
+  75%  {background: #aeeec3;
+background: radial-gradient(circle, rgba(174, 238, 195, 0.9) 0%, rgba(148, 187, 233, 1) 100%); left:0px; top:200px;}
+  100% {background: #d4de14;
+background: linear-gradient(90deg, rgba(212, 222, 20, 1) 0%, rgba(26, 129, 232, 1) 35%, rgba(255, 0, 81, 1) 100%); left:0px; top:0px;}
 }
 </style>
 </head>
 <body>
 
-<h1>CSS Animation</h1>
 
 <div></div>
 
@@ -29,5 +36,3 @@ div {
 
 </body>
 </html>
-
-
